@@ -39,7 +39,6 @@ After creating your resume, a unique link will be generated. Share this link wit
 - Vue.js 3
 - Tailwind CSS
 - FontAwesome (for icons)
-- ... (any other major libraries or frameworks used)
 
 ## Contributing
 
@@ -51,5 +50,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or feedback, please contact [Your Name](mailto:youremail@example.com).
+For any inquiries or feedback, please contact [Azhar Bihari](mailto:azhrbhr@gmail.com).
 
