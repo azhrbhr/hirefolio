@@ -121,64 +121,16 @@
             </p>
         </div>
     </div>
-
-
-
-    <form @submit.prevent="submitResume">
-        <!-- Basic Info Section -->
-        <div class="mb-6">
-            <h2 class="text-lg font-semibold mb-4">Basic Information</h2>
-            <!-- Full Name -->
-            <div class="mb-4">
-                <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name</label>
-                <input v-model="formData.fullName" type="text" id="fullName" name="fullName" placeholder="John Doe"
-                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-            </div>
-            <!-- Job Title -->
-            <div class="mb-4">
-                <label for="jobTitle" class="block text-sm font-medium text-gray-700">Job Title</label>
-                <input v-model="formData.jobTitle" type="text" id="jobTitle" name="jobTitle" placeholder="Web Developer"
-                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-            </div>
-            <!-- Email -->
-            <div class="mb-4">
-                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input v-model="formData.email" type="email" id="email" name="email" placeholder="john.doe@example.com"
-                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-            </div>
-            <!-- Phone -->
-            <div class="mb-4">
-                <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
-                <input v-model="formData.phone" type="tel" id="phone" name="phone" placeholder="+1 234 567 890"
-                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-            </div>
-            <!-- ... Add more input fields for other sections -->
-        </div>
-
-        <!-- Submit Button -->
-        <div>
-            <button type="submit"
-                class="bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Create
-                Resume</button>
-        </div>
-    </form>
+    <p class="text-center my-4">
+        <a href="#" @click="printResume" class="text-blue-500 hover:underline">Print Resume</a>
+    </p>
 </template>
   
 <script setup lang="ts">
 
-import { ref } from 'vue';
-
-const formData = ref({
-    fullName: '',
-    jobTitle: '',
-    email: '',
-    phone: ''
-    // ... Add more properties for other sections of the resume
-});
-
-const submitResume = () => {
-    console.log('Submitted Resume Data:', formData.value);
-    // You can send formData.value to a backend/API, save it to a database, etc.
+// Function to handle printing
+const printResume = () => {
+    window.print(); // Trigger browser's print functionality
 };
 
 </script>
