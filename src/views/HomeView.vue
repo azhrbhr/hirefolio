@@ -30,9 +30,9 @@
         <p class="text-lg mt-4">Showcase your skills, experiences, and projects with Hirefolio. Impress your future
           employers!</p>
         <div class="mt-8">
-          <a href="#"
-            class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-indigo-600 hover:text-white">Get
-            Started</a>
+          <RouterLink to="/resume"
+            class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-indigo-600 hover:text-white">
+            Resume</RouterLink>
         </div>
       </div>
     </header>
